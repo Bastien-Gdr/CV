@@ -5,14 +5,14 @@
 
 {% block body %}
 
-	<div class="presentation text-center">
+	<div class="presentation text-center" id="profil">
 		<h1 class="m-5">Développeur Web Symfony</h1>
 		<div class="col-10 offset-1 d-flex">
 			<div class="col-4 mx-auto">
 				<img src="{{ asset('images/cv.jpg') }}" alt="" class="img-fluid photo">
 			</div>
 			<div class="col-6 my-auto text-center">
-				<h3 class="h1">PROFIL</h3>
+				<h3 class="h1">Profil</h3>
 				<p>
 					Âgé de 24 ans, je souhaite intégrer la Licence Professionnelle Métiers de l’informatique : conception développement et test de logiciels en alternance. Ayant validé mon titre professionnel en février 2023, je souhaite poursuivre ma formation à vos côtés afin de consolider mes acquis et acquérir de nouvelles compétences tout en gagnant de l’expérience professionnel.
 				</p>
@@ -23,7 +23,7 @@
 
 	{# FORMATIONS #}
 
-	<div class="formations text-center">
+	<div class="formations text-center" id="formations">
 		<h3 class="h1 m-5">Formations</h3>
 
 		<div class="ligne1 d-flex">
@@ -76,7 +76,7 @@
 
 	{# INTERETS #}
 
-	<div class="interets text-center">
+	<div class="interets text-center" id="interets">
 		<h3 class="h1 m-5">Intérêts</h3>
 		<div class="musique">
 			Musique : Pratique de piano et de guitare
@@ -92,7 +92,7 @@
 
 	{# LANGAGES #}
 
-	<div class="langages text-center">
+	<div class="langages text-center" id="langages">
 		<h3 class="h1 m-5">Langages</h3>
 		<div class="logoLangages d-flex">
 
@@ -127,12 +127,25 @@
 
 	{# EXPERIENCES #}
 
-	<div class="experiences text-center">
+	<div class="experiences text-center" id="experiences">
 		<h3 class="h1 m-5">Mes projets</h3>
+		<div class="d-flex">
+			<div class="luca col-3">
+				<a href="#"><img src="{{ asset('images/luca/list.png') }}" class="img-fluid" alt=""></a>
+			</div>
+			<div class="vintageInde col-3">
+				<a href="#"><img src="{{ asset('images/vintageInde.png') }}" class="img-fluid" alt=""></a>
+			</div>
+			<div class="bookBdd col-3">
+				<a href="#"><img src="{{ asset('images/bookBdd.png') }}" class="img-fluid" alt=""></a>
+			</div>
+		</div>
+	</div>
 
-		<div class="luca"></div>
-		<div class="vintageInde"></div>
-		<div class="bookBdd"></div>
+    	<div class="up">
+		<a href="#" class="btn">
+			<i class="fa-solid fa-arrow-up"></i>
+		</a>
 	</div>
 
 {% endblock %}
