@@ -1,0 +1,138 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon CV
+{% endblock %}
+
+{% block body %}
+
+	<div class="presentation text-center">
+		<h1 class="m-5">Développeur Web Symfony</h1>
+		<div class="col-10 offset-1 d-flex">
+			<div class="col-4 mx-auto">
+				<img src="{{ asset('images/cv.jpg') }}" alt="" class="img-fluid photo">
+			</div>
+			<div class="col-6 my-auto text-center">
+				<h3 class="h1">PROFIL</h3>
+				<p>
+					Âgé de 24 ans, je souhaite intégrer la Licence Professionnelle Métiers de l’informatique : conception développement et test de logiciels en alternance. Ayant validé mon titre professionnel en février 2023, je souhaite poursuivre ma formation à vos côtés afin de consolider mes acquis et acquérir de nouvelles compétences tout en gagnant de l’expérience professionnel.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	{# FORMATIONS #}
+
+	<div class="formations text-center">
+		<h3 class="h1 m-5">Formations</h3>
+
+		<div class="ligne1 d-flex">
+			<div class="rncp col-6 my-auto">
+				<div class="logoRncp col-7 mx-auto">
+					<img src="{{ asset('images/rncp.png') }}" class="img-fluid" alt="">
+				</div>
+				<div class="col-6 my-auto  mx-auto">
+					<strong>Titre Professionnel – Développeur Web et Web Mobile – Niveau V</strong>
+					<br>
+					<em>Formation 31 – 2023</em>
+				</div>
+			</div>
+			<div class="openClassroom col-6 my-auto">
+				<div class="logoOpenclassroom col-4 py-4 mx-auto">
+					<img src="{{ asset('images/openclassroom.jpeg') }}" class="img-fluid" alt="">
+				</div>
+				<div class="col-6 my-auto mx-auto">
+					<strong>Certificats HTML5 et CSS3, JavaScript</strong>
+					<br>
+					<em>OpenClassrooms – 2021</em>
+				</div>
+			</div>
+		</div>
+
+		<div class="ligne2 d-flex my-5">
+			<div class="staps col-6 my-auto">
+				<div class="logoStaps col-3 mb-4 mx-auto">
+					<img src="{{ asset('images/Logo-Sport-Mup.png') }}" class="img-fluid" alt="">
+				</div>
+				<div class="col-6 my-auto mx-auto">
+					<strong>Licence 3 STAPS, mention Management du Sport</strong>
+					<br>
+					<em>Université de Poitiers – 2020</em>
+				</div>
+			</div>
+
+			<div class="vh col-6 my-auto">
+				<div class="logoVh col-6 mb-2 mx-auto">
+					<img src="{{ asset('images/vh.png') }}" class="img-fluid" alt="">
+				</div>
+				<div class="col-6 my-auto pt-5 mx-auto">
+					<strong>Baccalauréat Scientifique Spécialité Physique-Chimie</strong>
+					<br>
+					<em>Victor-Hugo, Poitiers – 2017</em>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{# INTERETS #}
+
+	<div class="interets text-center">
+		<h3 class="h1 m-5">Intérêts</h3>
+		<div class="musique">
+			Musique : Pratique de piano et de guitare
+		</div>
+
+		<div class="sports">
+			Sport : Trek, musculation
+		</div>
+		<div class="voyage">
+			Voyage : Nouvelle Zélande (avril 2023)
+		</div>
+	</div>
+
+	{# LANGAGES #}
+
+	<div class="langages text-center">
+		<h3 class="h1 m-5">Langages</h3>
+		<div class="logoLangages d-flex">
+
+			<div class="logoSymfony col-1">
+				<img src="{{ asset('images/symfony.png') }}" class="img-fluid" alt="">
+			</div>
+			<div class="logoBootstrap col-1">
+				<img src="{{ asset('images/bootstrap.png') }}" class="img-fluid" alt="">
+			</div>
+			<div class="logoCss col-1">
+				<img src="{{ asset('images/css.png') }}" class="img-fluid" alt="">
+			</div>
+			<div class="logoHtml col-1">
+				<img src="{{ asset('images/html.png') }}" class="img-fluid" alt="">
+			</div>
+			<div class="logoJs col-1">
+				<img src="{{ asset('images/js.png') }}" class="img-fluid" alt="">
+			</div>
+			<div class="logoPhp col-1">
+				<img src="{{ asset('images/php.png') }}" class="img-fluid" alt="">
+			</div>
+			<div class="logoSql col-1">
+				<img src="{{ asset('images/sql.png') }}" class="img-fluid" alt="">
+			</div>
+			<div class="logoWordpress col-1">
+				<img src="{{ asset('images/wordpress.png') }}" class="img-fluid" alt="">
+			</div>
+		</div>
+
+	</div>
+
+
+	{# EXPERIENCES #}
+
+	<div class="experiences text-center">
+		<h3 class="h1 m-5">Mes projets</h3>
+
+		<div class="luca"></div>
+		<div class="vintageInde"></div>
+		<div class="bookBdd"></div>
+	</div>
+
+{% endblock %}
