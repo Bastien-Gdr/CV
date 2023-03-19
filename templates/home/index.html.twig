@@ -128,24 +128,122 @@
 	{# EXPERIENCES #}
 
 	<div class="experiences text-center" id="experiences">
-		<h3 class="h1 m-5">Mes projets</h3>
-		<div class="d-flex">
-			<div class="luca col-3">
-				<a href="#"><img src="{{ asset('images/luca/list.png') }}" class="img-fluid" alt=""></a>
+		<h3 class="h1 m-5">Porfolio</h3>
+		<div class="d-flex justify-content-around">
+			<div
+				class="luca col-3">
+
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					<img src="{{ asset('images/luca/home.png') }}" class="img-fluid" alt="">
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">E-commerce de maroquinerie</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div id="carouselExample" class="carousel slide">
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="{{ asset('images/luca/home.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/login.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/list.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/details.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/modal.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/cart.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/paiement.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/recapOrder.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/adminOrder.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/addBag.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item ">
+											<img src="{{ asset('images/luca/adminList.png') }}" class="d-block w-100" alt="...">
+										</div>
+										<div class="carousel-item">
+											<img src="{{ asset('images/luca/adminUser.png') }}" class="d-block w-100" alt="...">
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
 			</div>
+
+
 			<div class="vintageInde col-3">
-				<a href="#"><img src="{{ asset('images/vintageInde.png') }}" class="img-fluid" alt=""></a>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+					<img src="{{ asset('images/vintageInde.png') }}" class="img-fluid" alt="">
+				</button>
+
+				<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Site future entreprise</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div id="carouselExample" class="carousel slide">
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="{{ asset('images/vintageInde.png') }}" class="d-block w-100" alt="...">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+
+
 			<div class="bookBdd col-3">
 				<a href="#"><img src="{{ asset('images/bookBdd.png') }}" class="img-fluid" alt=""></a>
 			</div>
 		</div>
 	</div>
 
-    	<div class="up">
+	<div class="up">
 		<a href="#" class="btn">
 			<i class="fa-solid fa-arrow-up"></i>
 		</a>
 	</div>
 
+{% endblock %}
+
+{% block javascripts %}
+	<script></script>
 {% endblock %}
