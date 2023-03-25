@@ -16,13 +16,14 @@ strong, em{font-size: 0.9em; }
 .overlay{position:relative;box-shadow: 0px 5px 20px grey;}
 .content{opacity: 0;color: white;position: absolute;top: 20%;left: 1%;}
 .content1{opacity: 0;color: white;position: absolute;top: 35%;left: 1%;}
+.content2{opacity: 0;color: white;position: absolute;top: 10%;left: 1%;}
 .overlay:hover img{
         filter:brightness(20%);
         transform:scale(1.1);
         transition:all .7s;
         
 }
-.overlay:hover .content, .overlay:hover .content1{opacity: 1;transition-duration: 1.8s;z-index: 4;}
+.overlay:hover .content, .overlay:hover .content1, .overlay:hover .content2{opacity: 1;transition-duration: 1.8s;z-index: 4;}
 
   
 
