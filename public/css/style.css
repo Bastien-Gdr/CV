@@ -1,7 +1,9 @@
-body{ background: linear-gradient( rgb(220, 255, 207),rgb(251, 255, 249)); font-family: 'Roboto Condensed', sans-serif;font-size: x-large;}
-h1, h2, h3, h4, h5, h6{font-family: 'Boogaloo', cursive ;font-size: 4em;}
-ul li a{font-family: 'Boogaloo', cursive ;}
+body, .footer{ background: #F8F7F1; font-family: 'Roboto Condensed', sans-serif;font-size: x-large;}
+h1, h2, h3, h4, h5, h6{font-family: 'Roboto Mono', monospace;font-size: 3em;}
+ul li a{font-family: 'Roboto Mono', monospace ;}
+a{text-decoration: none;color: black;}
 strong, em{font-size: 0.9em; }
+.coordonnees{font-size: large;}
 
 
 
@@ -24,7 +26,8 @@ strong, em{font-size: 0.9em; }
         
 }
 .overlay:hover .content, .overlay:hover .content1, .overlay:hover .content2{opacity: 1;transition-duration: 1.8s;z-index: 4;}
-
+.gmail{max-width: 50px;}
+.linkedin{max-width: 50px;}
   
 
 .interets{position: absolute;top: 55%;right: 10%;}
