@@ -5,35 +5,35 @@
 
 {% block body %}
 
-	<div class="presentation text-center" id="profil">
+	<div class="presentation text-center reveal" id="profil">
 		<div class="col-10 offset-1 d-flex">
 			<div class="col-4">
-				<img src="{{ asset('images/cv.png') }}" alt="" class="img-fluid photo">
+				<img src="{{ asset('images/cv.png') }}" alt="" class="img-fluid photo reveal-2">
 			</div>
 			<div class="col-6 offset-1 mt-5 pt-5">
-				<h1 class="m-2">Bastien Gondard</h1>
-				<p class="mt-5">
+				<h1 class="m-2 reveal-3">Bastien Gondard</h1>
+				<p class="mt-5 reveal-4">
 					Âgé de 24 ans, je souhaite poursuivre ma formation à vos côtés en alternance. Ayant validé mon titre professionnel en février 2023, mon objectif est de consolider mes acquis et d'acquérir de nouvelles compétences tout en gagnant de l’expérience professionnel.
 				</p>
 			</div>
 		</div>
 		<div class="interets col-6 offset-6 pt-3">
-			<h3 class="h2">Centres d'intérêts</h3>
+			<h3 class="h2 reveal-8">Centres d'intérêts</h3>
 			<div class="d-flex justify-content-around mt-3">
 				<div class="piano d-flex activite">
 			
-						<img src="{{ asset('images/piano-simple.png')}}" class="img-fluid" alt=""> 
-						<em class="my-auto p-2">Piano</em>
+						<img src="{{ asset('images/piano-simple.png')}}" class="img-fluid reveal-2" alt=""> 
+						<em class="my-auto p-2 reveal-3">Piano</em>
 				</div>
 				<div class="sports d-flex activite">
 
-					<img src="{{ asset('images/camping.png')}}" class="img-fluid" alt="">
-					<em class="my-auto p-2">Trek</em>
+					<img src="{{ asset('images/camping.png')}}" class="img-fluid reveal-2" alt="">
+					<em class="my-auto p-2 reveal-3">Trek</em>
 				</div>
 				<div class="voyage d-flex activite">
 		
-					<img src="{{ asset('images/voyage-avec-avion.png')}}" class="img-fluid" alt="">
-					<em class="my-auto p-2">Nouvelle-Zélande</em>
+					<img src="{{ asset('images/voyage-avec-avion.png')}}" class="img-fluid reveal-2" alt="">
+					<em class="my-auto p-2 reveal-3">Nouvelle-Zélande</em>
 				</div>
 			</div>
 		</div>
@@ -42,10 +42,10 @@
 
 	{# FORMATIONS #}
 
-	<div class="formations text-center p-5" id="formations">
-		<h3 class="m-5 py-3">Formations</h3>
+	<div class="formations text-center p-5 reveal" id="formations">
+		<h3 class="m-5 py-3 reveal-2">Formations</h3>
 
-		<div class="ligne1 col-10 offset-1 d-flex justify-content-around">
+		<div class="ligne1 col-10 offset-1 d-flex reveal-3 justify-content-around">
 			<div class="rncp col-5 d-flex px-5 justify-content-center my-auto">
 				<div class="logoRncp col-6">
 					<img src="{{ asset('images/rncp.png') }}" class="img-fluid" alt="">
@@ -68,7 +68,7 @@
 			</div>
 		</div>
 
-		<div class="ligne2 col-10 offset-1 d-flex justify-content-around my-5">
+		<div class="ligne2 col-10 offset-1 reveal-4 d-flex justify-content-around my-5">
 			<div class="staps col-5 d-flex justify-content-around my-auto">
 				<div class="logoStaps col-2 my-auto">
 					<img src="{{ asset('images/Logo-Sport-Mup.png') }}" class="img-fluid" alt="">
@@ -97,10 +97,10 @@
 
 {# LANGAGES #}
 
-<div class="langages text-center" id="langages">
-	<h3 class="m-5">Langages</h3>
+<div class="langages text-center reveal" id="langages">
+	<h3 class="m-5 reveal-2">Langages</h3>
 
-	<div class="col-8 offset-2">
+	<div class="col-8 reveal-3 offset-2">
 		<div class="logoLangages1 d-flex my-5 justify-content-around">
 			<div class="slid_1 col-1"><img src="{{ asset('images/symfony.png') }}" class="img-fluid" alt=""></div>
 			
@@ -108,7 +108,7 @@
 			<div class="slid_8 col-2 my-auto"><img src="{{ asset('images/wordpress.png') }}" class="img-fluid" alt=""></div>
 			<div class="slid_7 col-1 my-auto"><img src="{{ asset('images/sql.png') }}" class="img-fluid" alt=""></div>
 		</div>
-		<div class="logoLangages2 d-flex justify-content-around">
+		<div class="logoLangages2 reveal-4 d-flex justify-content-around">
 		<div class="slid_2 col-1 my-auto"><strong class="h3">Bootstrap</strong><img src="{{ asset('images/bootstrap.png') }}" class="img-fluid mt-2" alt="">
 			</div>
 			<div class="slid_3 col-1"><img src="{{ asset('images/css.png') }}" class="img-fluid" alt=""></div>
@@ -124,10 +124,10 @@
 
 {# EXPERIENCES #}
 
-<div class="experiences text-center pb-5" id="experiences">
-	<h3 class="m-5 pt-5">Porfolio</h3>
+<div class="experiences text-center pb-5 reveal" id="experiences">
+	<h3 class="m-5 pt-5 reveal-2">Porfolio</h3>
 	<div class="d-flex justify-content-around">
-		<div class="luca col-3">
+		<div class="luca reveal-3 col-3">
 			<h3 class="h2 p-2">Ecommerce</h3>
 
 			<!-- Button trigger modal -->
@@ -201,7 +201,7 @@
 		</div>
 
 
-		<div class="vintageInde col-3">
+		<div class="vintageInde reveal-4 col-3">
 			<h3 class="h2 p-2">Projet d'entreprise</h3>
 			<button type="button" class="btn overlay" data-bs-toggle="modal" data-bs-target="#exampleModal2">
 				<img src="{{ asset('images/vintageInde.png') }}" class="img-fluid" alt="">
@@ -230,7 +230,7 @@
 		</div>
 
 
-		<div class="bookBase col-3">
+		<div class="bookBase reveal-5 col-3">
 			<h3 class="h2 p-2">Base de données</h3>
 
 			<!-- Button trigger modal -->
