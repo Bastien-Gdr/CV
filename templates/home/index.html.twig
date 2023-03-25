@@ -1,21 +1,32 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Mon CV
+{% block title %}Bastien Gondard
 {% endblock %}
 
 {% block body %}
 
 	<div class="presentation text-center" id="profil">
-		<h1 class="m-5">Développeur Web Symfony</h1>
 		<div class="col-10 offset-1 d-flex">
 			<div class="col-4 mx-auto">
-				<img src="{{ asset('images/cv.jpg') }}" alt="" class="img-fluid photo">
+				<img src="{{ asset('images/cv.png') }}" alt="" class="img-fluid photo">
 			</div>
-			<div class="col-6 my-auto text-center">
-				<h3 class="h1">Profil</h3>
-				<p>
+			<div class="col-6 mt-5">
+				<h1 class="m-2">Bastien Gondard</h1>
+				<p class="mt-4">
 					Âgé de 24 ans, je souhaite intégrer la Licence Professionnelle Métiers de l’informatique : conception développement et test de logiciels en alternance. Ayant validé mon titre professionnel en février 2023, je souhaite poursuivre ma formation à vos côtés afin de consolider mes acquis et acquérir de nouvelles compétences tout en gagnant de l’expérience professionnel.
 				</p>
+			</div>
+		</div>
+		<div class="interets d-flex justify-content-around col-6 offset-6">
+			<div class="piano activite">
+				<img src="{{ asset('images/piano-simple.png')}}" class="img-fluid" alt="">
+			</div>
+			<div class="sports activite">
+				<img src="{{ asset('images/camping.png')}}" class="img-fluid" alt="">
+				
+			</div>
+			<div class="voyage activite">
+				<img src="{{ asset('images/voyage-avec-avion.png')}}" class="img-fluid" alt="">
 			</div>
 		</div>
 	</div>
@@ -23,25 +34,25 @@
 
 	{# FORMATIONS #}
 
-	<div class="formations text-center" id="formations">
-		<h3 class="h1 m-5">Formations</h3>
+	<div class="formations text-center p-5" id="formations">
+		<h3 class="m-5">Formations</h3>
 
-		<div class="ligne1 d-flex">
-			<div class="rncp col-6 my-auto">
-				<div class="logoRncp col-7 mx-auto">
+		<div class="ligne1 col-10 offset-1 d-flex justify-content-around">
+			<div class="rncp col-5 d-flex px-5 justify-content-center my-auto">
+				<div class="logoRncp col-6">
 					<img src="{{ asset('images/rncp.png') }}" class="img-fluid" alt="">
 				</div>
-				<div class="col-6 my-auto  mx-auto">
+				<div class="col-7 my-auto">
 					<strong>Titre Professionnel – Développeur Web et Web Mobile – Niveau V</strong>
 					<br>
 					<em>Formation 31 – 2023</em>
 				</div>
 			</div>
-			<div class="openClassroom col-6 my-auto">
-				<div class="logoOpenclassroom col-4 py-4 mx-auto">
+			<div class="openClassroom col-5 d-flex  justify-content-around my-auto">
+				<div class="logoOpenclassroom my-auto col-3">
 					<img src="{{ asset('images/openclassroom.jpeg') }}" class="img-fluid" alt="">
 				</div>
-				<div class="col-6 my-auto mx-auto">
+				<div class="col-6 my-auto">
 					<strong>Certificats HTML5 et CSS3, JavaScript</strong>
 					<br>
 					<em>OpenClassrooms – 2021</em>
@@ -49,178 +60,150 @@
 			</div>
 		</div>
 
-		<div class="ligne2 d-flex my-5">
-			<div class="staps col-6 my-auto">
-				<div class="logoStaps col-3 mb-4 mx-auto">
+		<div class="ligne2 col-10 offset-1 d-flex justify-content-around my-5">
+			<div class="staps col-5 d-flex justify-content-around my-auto">
+				<div class="logoStaps col-2 my-auto">
 					<img src="{{ asset('images/Logo-Sport-Mup.png') }}" class="img-fluid" alt="">
 				</div>
-				<div class="col-6 my-auto mx-auto">
-					<strong>Licence 3 STAPS, mention Management du Sport</strong>
-					<br>
-					<em>Université de Poitiers – 2020</em>
-				</div>
+				<div class="col-6 my-auto">
+					<strong>Licence 3 STAPS</br>
+					Management du Sport</strong>
+				<br>
+				<em>Université de Poitiers – 2020</em>
 			</div>
+		</div>
 
-			<div class="vh col-6 my-auto">
-				<div class="logoVh col-6 mb-2 mx-auto">
-					<img src="{{ asset('images/vh.png') }}" class="img-fluid" alt="">
-				</div>
-				<div class="col-6 my-auto pt-5 mx-auto">
-					<strong>Baccalauréat Scientifique Spécialité Physique-Chimie</strong>
-					<br>
-					<em>Victor-Hugo, Poitiers – 2017</em>
-				</div>
+		<div class="vh col-5 d-flex justify-content-around my-auto">
+			<div class="logoVh my-auto col-3">
+				<img src="{{ asset('images/vh.png') }}" class="img-fluid" alt="">
+			</div>
+			<div class="col-6 my-auto">
+				<strong>Baccalauréat Scientifique Spécialité Physique-Chimie</strong>
+				<br>
+				<em>Victor-Hugo, Poitiers – 2017</em>
 			</div>
 		</div>
 	</div>
+</div>
 
-	{# INTERETS #}
 
-	<div class="interets text-center" id="interets">
-		<h3 class="h1 m-5">Intérêts</h3>
-		<div class="musique">
-			Musique : Pratique de piano et de guitare
-		</div>
 
-		<div class="sports">
-			Sport : Trek, musculation
-		</div>
-		<div class="voyage">
-			Voyage : Nouvelle Zélande (avril 2023)
+{# LANGAGES #}
+
+<div class="langages text-center" id="langages">
+	<h3 class="m-5">Langages</h3>
+	<div class="contener_slideshow logoLangages">
+
+		<div class="contener_slide d-flex">
+
+			<div class="slid_1 col-1"><img src="{{ asset('images/symfony.png') }}" class="img-fluid" alt=""></div>
+			<div class="slid_2 col-1"><img src="{{ asset('images/bootstrap.png') }}" class="img-fluid" alt=""></div>
+			<div class="slid_3 col-1"><img src="{{ asset('images/css.png') }}" class="img-fluid" alt=""></div>
+			<div class="slid_4 col-1"><img src="{{ asset('images/html.png') }}" class="img-fluid" alt=""></div>
+			<div class="slid_5 col-2"><img src="{{ asset('images/js.png') }}" class="img-fluid" alt=""></div>
+			<div class="slid_6 col-1"><img src="{{ asset('images/php.png') }}" class="img-fluid" alt=""></div>
+			<div class="slid_7 col-1"><img src="{{ asset('images/sql.png') }}" class="img-fluid" alt=""></div>
+			<div class="slid_8 col-1"><img src="{{ asset('images/wordpress.png') }}" class="img-fluid" alt=""></div>
+
 		</div>
 	</div>
-
-	{# LANGAGES #}
-
-	<div class="langages text-center" id="langages">
-		<h3 class="h1 m-5">Langages</h3>
-		<div class="logoLangages d-flex">
-
-			<div class="logoSymfony col-1">
-				<img src="{{ asset('images/symfony.png') }}" class="img-fluid" alt="">
-			</div>
-			<div class="logoBootstrap col-1">
-				<img src="{{ asset('images/bootstrap.png') }}" class="img-fluid" alt="">
-			</div>
-			<div class="logoCss col-1">
-				<img src="{{ asset('images/css.png') }}" class="img-fluid" alt="">
-			</div>
-			<div class="logoHtml col-1">
-				<img src="{{ asset('images/html.png') }}" class="img-fluid" alt="">
-			</div>
-			<div class="logoJs col-1">
-				<img src="{{ asset('images/js.png') }}" class="img-fluid" alt="">
-			</div>
-			<div class="logoPhp col-1">
-				<img src="{{ asset('images/php.png') }}" class="img-fluid" alt="">
-			</div>
-			<div class="logoSql col-1">
-				<img src="{{ asset('images/sql.png') }}" class="img-fluid" alt="">
-			</div>
-			<div class="logoWordpress col-1">
-				<img src="{{ asset('images/wordpress.png') }}" class="img-fluid" alt="">
-			</div>
-		</div>
-
-	</div>
+</div>
 
 
-	{# EXPERIENCES #}
+{# EXPERIENCES #}
 
-	<div class="experiences text-center" id="experiences">
-		<h3 class="h1 m-5">Porfolio</h3>
-		<div class="d-flex justify-content-around">
-			<div
-				class="luca col-3">
+<div class="experiences text-center" id="experiences">
+	<h3 class="h1 m-5">Porfolio</h3>
+	<div class="d-flex justify-content-around">
+		<div class="luca col-3">
+			<h3 class="h2">Ecommerce</h3>
 
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-					<img src="{{ asset('images/luca/home.png') }}" class="img-fluid" alt="">
-				</button>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<img src="{{ asset('images/luca/home.png') }}" class="img-fluid" alt="">
+			</button>
 
-				<!-- Modal -->
-				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h1 class="modal-title fs-5" id="exampleModalLabel">E-commerce de maroquinerie</h1>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<div id="carouselExample" class="carousel slide">
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img src="{{ asset('images/luca/home.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/login.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/list.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/details.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/modal.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/cart.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/paiement.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/recapOrder.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/adminOrder.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/addBag.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item ">
-											<img src="{{ asset('images/luca/adminList.png') }}" class="d-block w-100" alt="...">
-										</div>
-										<div class="carousel-item">
-											<img src="{{ asset('images/luca/adminUser.png') }}" class="d-block w-100" alt="...">
-										</div>
-									</div>
-									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="visually-hidden">Previous</span>
-									</button>
-									<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-										<span class="visually-hidden">Next</span>
-									</button>
-								</div>
-							</div>
-
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
+						<div class="modal-body">
+							<div id="carouselExample" class="carousel slide">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="{{ asset('images/luca/home.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/login.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/list.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/details.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/modal.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/cart.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/paiement.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/recapOrder.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/adminOrder.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/addBag.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item ">
+										<img src="{{ asset('images/luca/adminList.png') }}" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="{{ asset('images/luca/adminUser.png') }}" class="d-block w-100" alt="...">
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
+		</div>
 
 
-			<div class="vintageInde col-3">
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-					<img src="{{ asset('images/vintageInde.png') }}" class="img-fluid" alt="">
-				</button>
+		<div class="vintageInde col-3">
+			<h3 class="h2">Projet d'entreprise</h3>
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+				<img src="{{ asset('images/vintageInde.png') }}" class="img-fluid" alt="">
+			</button>
 
-				<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Site future entreprise</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<div id="carouselExample" class="carousel slide">
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img src="{{ asset('images/vintageInde.png') }}" class="d-block w-100" alt="...">
-										</div>
+			<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div id="carouselExample" class="carousel slide">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="{{ asset('images/vintageInde.png') }}" class="d-block w-100" alt="...">
 									</div>
 								</div>
 							</div>
@@ -228,22 +211,18 @@
 					</div>
 				</div>
 			</div>
+		</div>
 
 
-			<div class="bookBdd col-3">
-				<a href="#"><img src="{{ asset('images/bookBdd.png') }}" class="img-fluid" alt=""></a>
-			</div>
+		<div class="bookBdd col-3">
+			<a href="#"><img src="{{ asset('images/bookBdd.png') }}" class="img-fluid" alt=""></a>
 		</div>
 	</div>
+</div>
 
-	<div class="up">
-		<a href="#" class="btn">
-			<i class="fa-solid fa-arrow-up"></i>
-		</a>
-	</div>
 
-{% endblock %}
-
-{% block javascripts %}
-	<script></script>
-{% endblock %}
+<div class="up">
+	<a href="#" class="btn">
+		<i class="fa-solid fa-arrow-up"></i>
+	</a>
+</div>{% endblock %}

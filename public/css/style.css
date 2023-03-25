@@ -1,4 +1,21 @@
+body{ background: linear-gradient( rgb(220, 255, 207),rgb(251, 255, 249)); font-family: 'Roboto Condensed', sans-serif;font-size: x-large;}
+h1, h2, h3, h4, h5, h6{font-family: 'Boogaloo', cursive ;font-size: 5em;}
+ul li a{font-family: 'Boogaloo', cursive ;}
+strong, em{font-size: 0.9em; }
 
 
-.photo{border-radius: 70%;}
+
 .up{background-color: rgb(255, 255, 255);color: black;position: fixed;bottom: 10%;right: 5%;border-radius: 50%;}
+
+.formations{background-color: #fff;}
+
+.experiences{background-color: #fff;}
+
+.staps, .rncp, .openClassroom, .vh{border: 1px solid black;border-radius: 30px;min-height: 150px; box-shadow: 5px 10px 5px grey ;}
+
+.luca:hover{opacity: .2; }
+
+.interets{position: absolute;top: 580px;}
+.activite{max-width:130px ;}
+.sports{max-width: 150px;}
+.piano{max-width: 120px;}
